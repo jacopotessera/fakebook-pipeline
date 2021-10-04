@@ -8,7 +8,7 @@ podTemplate(containers: [
             container('maven') {
                 stage('Build a Maven project') {
                     sh 'mvn test'
-                    junit 'target/surefire-reports/TEST-io.next.fakebook.FakebookApplicationTest.xml
+                    junit 'target/surefire-reports/TEST-io.next.fakebook.FakebookApplicationTest.xml'
                 }
             }
         }
